@@ -10,9 +10,10 @@ head(DMark)
 str(DMark)                           
 
 #Ordenar niveles de variables categoricas ordinales
-DMark$Edad = factor(DMark$Edad,levels = c("Joven","Media","Adulta"),ordered=TRUE)
-DMark$Historial = factor(DMark$Historial,levels = c("Bajo","Medio","Alto"),ordered=TRUE)
-#DMark$Edad <- ordered(DMark$Edad, levels =  c("Joven","Media","Adulta"))                   #No es necesario escribir: Order=TRUE viene por defecto 
+DMark$Edad <- factor(DMark$Edad,levels = c("Joven","Media","Adulta"),ordered=TRUE)
+DMark$Historial <- factor(DMark$Historial,levels = c("Bajo","Medio","Alto"),ordered=TRUE)
+#DMark$Edad <- ordered(DMark$Edad, levels =  c("Joven","Media","Adulta"))
+# #No es necesario escribir: Order=TRUE viene por defecto
 str(DMark)                                     
 
 #-----------------------------------------------------------------
@@ -56,13 +57,13 @@ pie(pi, labels = lbls1,
 
 #  Tablas de contingencia                                       
 #-----------------------------
-tabla1=table(DMark$Edad,DMark$Historial)
+tabla1 <- table(DMark$Edad,DMark$Historial)
 tabla1
 
 
 #  c) Distribucion condicional                                     
 #----------------------------------
-tabla2=prop.table(tabla1,margin=1)                   
+tabla2 <- prop.table(tabla1,margin=1)
 tabla2
 
 
@@ -76,7 +77,7 @@ legend("topright",legend=levels(DMark$Edad),col=2:4,
        pch=15,title="Grupo Etario")                      
 
 ## Invirtiendo filas x columnas
-tabla=prop.table(table(DMark$Historial,DMark$Edad),margin=2)
+tabla <- prop.table(table(DMark$Historial,DMark$Edad),margin=2)
 tabla
 
 barplot(tabla,col=2:4,beside = T,
