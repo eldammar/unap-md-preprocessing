@@ -80,7 +80,7 @@ mov.imp <- impute_lm(mov, N_llamadas ~ Plan)
 #Outlier
 #==========================================
 
-mov1<-read.table("./data/movil_out.csv", sep = ";", dec=".", header = T)
+mov1<-read.table("data/movil_out.csv", sep = ";", dec=".", header = T)
 head(mov1)
 
 mov2<-mov1[,c(5,6,7)]
@@ -129,7 +129,7 @@ which.max(d)
 #Transformacion
 #==========================================
 
-mov<-read.table("./data/movil_cl.csv", sep = ";", dec=".", header = T)
+mov<-read.table("data/movil_cl.csv", sep = ";", dec=".", header = T)
 head(mov)
 
 movcl<-na.omit(mov)
@@ -162,7 +162,7 @@ sd(zmov_t)
 #Min-Max
 #--------
 # Usando la libreria dprep
-source(file="./script/dprep.R")
+source(file= "script/dprep.R")
 
 mm_mov_t<-mmnorm(mov_t,minval=0,maxval=1 )[,-4]
 summary(mm_mov_t)
@@ -172,7 +172,7 @@ summary(mm_mov_t)
 #---------------------
 
 # Usando dprep
-source('./script/dprep.R')
+source('script/dprep.R')
 ed_mov_t<-decscale(mov_t)[,-4]
 ed_mov_t
 

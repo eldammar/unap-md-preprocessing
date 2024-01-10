@@ -5,7 +5,7 @@
 # Lectura de datos
 #-------------------
 
-DMark <- read.csv("./data/MarketingDirecto.csv")
+DMark <- read.csv("data/MarketingDirecto.csv")
 head(DMark)                          
 str(DMark)                           
 
