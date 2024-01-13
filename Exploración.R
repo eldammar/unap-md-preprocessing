@@ -267,7 +267,7 @@ med<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=median)
 q1<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=quantile,probs = 0.25,type = 6)
 q3<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=quantile,probs = 0.75,type = 6)
 r<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=rango)
-ric<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=RIC)   
+ric<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=RIC)
 s<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=sd)
 cv<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=CV)
 as3<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=A3)
@@ -275,7 +275,7 @@ as3<-tapply(X = DMark$Monto,INDEX = DMark$Ecivil,FUN=A3)
 resumen<-as.matrix(rbind(me,med,q1,q3,r,ric,s,cv,as3))
 resumen
 
-psych::describeBy(x = DMark$Monto, group = DMark$Ecivil)    
+psych::describeBy(x = DMark$Monto, group = DMark$Ecivil)
 
 #
 
@@ -291,15 +291,15 @@ boxplot(DMark$Monto ~ DMark$Ecivil,
 #Grafico y coeficiente de correlacion
 #-------------------------------------
 plot(DMark$Salario,DMark$Monto)
-cor(DMark$Salario,DMark$Monto)    
+cor(DMark$Salario,DMark$Monto)
 cor(DMark$Salario,DMark$Monto, method = "pearson" )
 
 
 # Matriz de Diagramas de dispersion
 #------------------------------------
-pairs(~Salario + Monto + Hijos + Catalogos,data=DMark)    
+pairs(~Salario + Monto + Hijos + Catalogos,data=DMark)
 library(psych)
-cor(DMark[,c(6,7,9,10)])              
-corr.test(DMark[,c(6,7,9,10)])        
-cor.plot(cor(DMark[,c(6,7,9,10)]))    
+cor(DMark[,c(6,7,9,10)])
+corr.test(DMark[,c(6,7,9,10)])
+cor.plot(cor(DMark[,c(6,7,9,10)]))
 
