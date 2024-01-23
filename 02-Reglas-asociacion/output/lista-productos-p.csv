@@ -1,0 +1,13 @@
+Transaccion,Producto
+1,"Leche,Huevos,Pan,Mantequilla"
+2,"Salchichas,Harina,Leche,Catsup"
+3,"Mermerlada,Mantequilla,Catsup,Salchichas"
+4,"Pan,Leche,Mantequilla"
+5,"Mantequilla,Pan,Galletas"
+6,"Galletas,Pan,Mantequilla,Leche"
+7,"Leche,Galletas"
+8,"Pan,Leche,Mantequilla"
+9,"Huevos,Pan,Mantequilla,Galletas"
+10,"Leche,Mantequilla,Pan"
+11,"Mantequilla,Pan,Leche"
+12,"Leche,Atun,Pan,Galletas,Catsup"

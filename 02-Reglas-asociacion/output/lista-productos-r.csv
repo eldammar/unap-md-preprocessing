@@ -1,0 +1,13 @@
+V1
+Leche,Huevos,Pan,Mantequilla
+Salchichas,Harina,Leche,Catsup
+Mermerlada,Mantequilla,Catsup,Salchichas
+Pan,Leche,Mantequilla
+Mantequilla,Pan,Galletas
+Galletas,Pan,Mantequilla,Leche
+Leche,Galletas
+Pan,Leche,Mantequilla
+Huevos,Pan,Mantequilla,Galletas
+Leche,Mantequilla,Pan
+Mantequilla,Pan,Leche
+Leche,Atun,Pan,Galletas,Catsup
